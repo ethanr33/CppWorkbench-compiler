@@ -1,0 +1,8 @@
+.vscode/
+build/
+compile_commands.json
+compiler
+out
+test_suites
+*.o
+*.asm
