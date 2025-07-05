@@ -126,6 +126,7 @@ void AST::construct_parse_tree(const vector<Token>& token_stream) {
                     symbol_stack.pop();
                 } else {
                     throw runtime_error("Syntax error");
+                    return;
                 }
             } else {
                 // If terminal symbol, consume token from the input string and pop
@@ -136,10 +137,12 @@ void AST::construct_parse_tree(const vector<Token>& token_stream) {
 
                 if (grammar.parse_table.find(cur_symbol) == grammar.parse_table.end()) {
                     throw runtime_error("Syntax error");
+                    return;
                 }
 
                 if (grammar.parse_table.at(cur_symbol).find(next_token_symbol) == grammar.parse_table.at(cur_symbol).end()) {
                     throw runtime_error("Syntax error");
+                    return;
                 }
 
                 int production_number = grammar.parse_table.at(cur_symbol).at(next_token_symbol);

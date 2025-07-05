@@ -1,0 +1,26 @@
+
+{
+    "return0.cpp": {
+        "error": false,
+        "returncode": 0
+    },
+    "return1.cpp": {
+        "error": false,
+        "returncode": 1
+    },
+    "return100.cpp": {
+        "error": false,
+        "returncode": 100
+    },
+    "spaces.cpp": {
+        "error": false,
+        "returncode": 0
+    },
+    "newlines.cpp": {
+        "error": false,
+        "returncode": 0
+    },
+    "missingretval.cpp": {
+        "error": true
+    }
+}

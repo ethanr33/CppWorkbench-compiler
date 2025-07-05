@@ -1,7 +1,11 @@
+#!/bin/bash
+
 
 if ! [ -d build ]; then
   mkdir build
 fi
+
+export PATH="$PWD:$PATH"
 
 cd build
 cmake ..
