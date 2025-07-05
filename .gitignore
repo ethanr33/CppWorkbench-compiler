@@ -6,6 +6,7 @@ compile_commands.json
 compiler
 out
 test_suites
+test0.cpp
 *.o
 *.asm
 *.pyc
