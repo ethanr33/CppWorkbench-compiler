@@ -6,7 +6,7 @@ CppWorkbench is a C++ compiler written in C++. It compiles a subset of the C++ l
 
 - Handwritten lexer and LL(1) parser
 - AST construction and traversal
-- NASM x86-64 code generation
+- NASM-supported x86-64 code generation
 
 # Supported C++ features
 
@@ -25,12 +25,13 @@ Example program:
 ```
 
 cppworkstation-compiler/
-└── codegen/       # NASM assembly code generation
-├── lexer/         # Tokenizer implementation
-├── parser/        # Grammar definitions, LL(1) parser and AST generator
-├── tests/         # Unit tests
-├── tools/         # Various tools for debugging
-├── main.cpp       
+├── codegen/         # NASM assembly code generation
+├── lexer/           # Tokenizer implementation
+├── parser/          # Grammar definitions, LL(1) parser and AST generator
+├── tests/           # Tests are located here
+│   └── integration/ # Integration tests
+├── tools/           # Various tools for debugging
+├── main.cpp         
 ├── CMakeLists.txt
 └── README.md
 

@@ -22,5 +22,20 @@
     },
     "missingretval.cpp": {
         "error": true
+    },
+    "missingsemicolon.cpp": {
+        "error": true
+    },
+    "missingparen.cpp": {
+        "error": true
+    },
+    "wrongreturncase.cpp": {
+        "error": true
+    },
+    "missingbrace.cpp": {
+        "error": true
+    },
+    "noentrypoint.cpp": {
+        "error": true
     }
 }
